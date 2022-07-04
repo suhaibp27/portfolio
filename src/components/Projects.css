@@ -1,0 +1,22 @@
+.projects {
+    background-color: #F6FBF4;
+    width: 100;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+    .projects {
+        padding: 120px 150px;
+    }
+
+}

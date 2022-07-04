@@ -1,30 +1,19 @@
-import logo from './media/logo.svg';
-import './App.css'
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import {BrowserRouter as Router} from 'react-router-dom';
-import Experience from './components/Experience';
-import Hobbies from './components/Hobbies';
-import Footer from './components/Footer';
+import React from 'react'
+import './Footer.css'
 
-function App() {
+const Footer = () => {
   return (
-    <Router>
-      <div className="App" id="app">
-        <Header />
-        <Home />
-        <About />
-        <div className='separate'></div>
-        <Skills />
-        <Projects />
-        <Experience />
-        <Hobbies />
-        <Footer />
-        {/* <div className="sample"></div>
-        <div className="footer">
+    <footer className='footer'>
+      <div className="footer__top">
+        <div className="footer__left">
+          {/* <p>Suhaib Peechanary</p> */}
+          <p>Kozhikode, India - 673007 | <a href="mailto:suhaibp27@gmail.com">suhaibp27@gmail.com</a></p>
+          {/* <p>Kozhikode, Kerala</p> */}
+          {/* <p>India - 673007</p>
+          <p>suhaibp27@gmail.com</p> */}
+        </div>
+        <div className="footer__middle"></div>
+        <div className="footer__right">
           <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icon created by Freepik - Flaticon</a>
           <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icon created by Pixel perfect - Flaticon</a>
           <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icon created by Freepik - Flaticon</a>
@@ -37,10 +26,12 @@ function App() {
           <a href="https://www.flaticon.com/free-icons/basketball" title="basketball icons">Basketball icon created by Freepik - Flaticon</a>
           <a href="https://www.flaticon.com/free-animated-icons/food-and-restaurant" title="food and restaurant animated icons">Food and restaurant animated icon created by Freepik - Flaticon</a>
         </div>
-        <img src={logo} className="App-logo" alt="logo" /> */}
       </div>
-    </Router>
-  );
+      <div className="footer__bottom">
+        <p>Handcrafted by <a href="/">me</a></p><p><span> &#169;</span>twoZeroTwoTwo</p>
+      </div>
+    </footer>
+  )
 }
 
-export default App;
+export default Footer

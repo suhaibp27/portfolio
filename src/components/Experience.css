@@ -1,0 +1,61 @@
+.main {
+    width: 100%;
+    color: #fff;
+    background-color: #282c34;
+    padding: 120px 30px 90px 30px;
+}
+
+.experience {
+    padding-bottom: 50px;
+}
+
+.experience__title {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.experience__heading {
+    font-size: 16px;
+}
+
+.experience__heading span {
+    color: #61dafb;
+}
+
+.client {
+    font-weight: 300;
+    color: grey;
+    padding: 5px 0;
+}
+
+.client span {
+    color: #61dafb;
+    font-weight: 400;
+}
+
+.experience__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 800px) {
+    .main {
+        padding: 120px 150px;
+    }
+
+    .experience__title {
+        font-size: 20px;
+    }
+    
+    .experience__heading {
+        font-size: 22px;
+    }
+
+    .experience__details {
+        font-size: 18px;
+    }
+}
